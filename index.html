@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>林锦程 (Jim Lin) | 计算机博士简历</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --accent-color: #ff6b6b;
+            --bg-color: #f8f9fa;
+            --card-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 顶部横幅 - 活力色彩 */
+        header {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid rgba(255,255,255,0.3);
+            object-fit: cover;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: -50px auto 50px;
+            padding: 20px;
+        }
+
+        /* 卡片样式 */
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: var(--card-shadow);
+        }
+
+        h2 {
+            color: #764ba2;
+            border-bottom: 3px solid #ff6b6b;
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        /* 技能标签 */
+        .tag {
+            display: inline-block;
+            background: #eee;
+            padding: 8px 15px;
+            border-radius: 50px;
+            margin: 5px;
+            font-size: 0.9em;
+            font-weight: bold;
+            color: #555;
+            transition: all 0.3s;
+        }
+
+        .tag:hover {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        /* 项目图片展示 */
+        .project-img {
+            width: 100%;
+            height: 200px;
+            border-radius: 15px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 15px;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+
+        .social-links a:hover {
+            opacity: 1;
+        }
+
+        .timeline-item {
+            border-left: 3px solid #764ba2;
+            padding-left: 20px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            width: 15px;
+            height: 15px;
+            background: #ff6b6b;
+            border-radius: 50%;
+            position: absolute;
+            left: -9px;
+            top: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="头像" class="profile-img">
+    <h1>嗨！我是 林锦程 (Jim) 👋</h1>
+    <p style="font-size: 1.2rem; font-weight: 300;">探索 AI 的边界 | 机器人视觉博士 | 摄影爱好者</p>
+    <div class="social-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+</header>
+
+<div class="container">
+
+    <section class="card">
+        <h2><i class="fas fa-user-rocket"></i> 关于我</h2>
+        <p>目前就读于 <strong>XX大学 AI 实验室</strong>，主要研究方向为<strong>具身智能 (Embodied AI)</strong>。我不仅喜欢在服务器上跑模型，更喜欢看机器人真的动起来！我坚信好的算法应该是有温度的。除了科研，我还是个滑板业余选手和开源社区的忠实粉丝。</p>
+    </section>
+
+    <div class="grid">
+        <section class="card">
+            <h2><i class="fas fa-graduation-cap"></i> 学术足迹</h2>
+            <div class="timeline-item">
+                <strong>XX大学 (双一流) | 博士</strong><br>
+                <span>计算机科学与技术 | 2022 - 2026 (预计)</span>
+            </div>
+            <div class="timeline-item">
+                <strong>XX理工大学 | 硕士</strong><br>
+                <span>人工智能方向 | 2019 - 2022</span>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2><i class="fas fa-tools"></i> 技能装备库</h2>
+            <div>
+                <span class="tag">PyTorch</span>
+                <span class="tag">Computer Vision</span>
+                <span class="tag">C++ / CUDA</span>
+                <span class="tag">LLM Fine-tuning</span>
+                <span class="tag">ROS / Robotics</span>
+                <span class="tag">Diffusers</span>
+                <span class="tag">Docker</span>
+            </div>
+        </section>
+    </div>
+
+    <section class="card">
+        <h2><i class="fas fa-laptop-code"></i> 炫酷项目</h2>
+        <div class="grid">
+            <div style="text-align: center;">
+                <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=500" alt="项目1" class="project-img">
+                <h4>智能避障视觉系统</h4>
+                <p style="font-size: 0.9em;">基于 Transformer 的实时动态环境感知框架。</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd05a?w=500" alt="项目2" class="project-img">
+                <h4>多模态机器人教练</h4>
+                <p style="font-size: 0.9em;">通过语音和手势直接操控机械臂完成精细化任务。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="card" style="background: var(--primary-gradient); color: white;">
+        <h2 style="color: white; border-bottom: 3px solid white;">🏆 高光时刻</h2>
+        <ul>
+            <li>CVPR 2025 最佳论文提名 (Best Paper Candidate)</li>
+            <li>国家奖学金 (2023, 2024 蝉联)</li>
+            <li>GitHub 开源项目 Star 数累计 2.5k+</li>
+            <li>全校马拉松比赛 前 10 名 (科研也要好身体！)</li>
+        </ul>
+    </section>
+
+</div>
+
+<footer>
+    <p>Made with ❤️ & Code by Jim Lin | © 2026</p>
+</footer>
+
+</body>
+</html>
